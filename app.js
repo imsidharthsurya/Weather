@@ -1,4 +1,3 @@
-console.log("js file is running")
 const forecast=require("./forecast")
 const path=require("path")
 const hbs=require("hbs")
