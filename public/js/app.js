@@ -9,7 +9,7 @@ weatherForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     const address=search.value
     const url="/weather?address="+address
-    messageOne.textContent="loading"
+    messageOne.textContent="loading..."
     messageTwo.textContent=""
     messageThree.textContent=""
 fetch(url).then((response)=>{
