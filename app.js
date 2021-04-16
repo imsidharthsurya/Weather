@@ -3,6 +3,7 @@ const path=require("path")
 const hbs=require("hbs")
 const express=require("express")
 const app=express()
+const port=process.env.PORT || 3000
 
 //path for static and dynamic files
 const partialsPath=path.join(__dirname,"/templates/partials")
@@ -73,6 +74,6 @@ app.get("*",(req,res)=>{
         txt: "Page not found"
     })
 })
-app.listen(3000,()=>{
-    console.log("Server is running on port 3000")
+app.listen(port,()=>{
+    console.log("Server is running on port "+port)
 })

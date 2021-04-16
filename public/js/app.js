@@ -8,7 +8,7 @@ const messageThree=document.querySelector("#msg-3")
 weatherForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     const address=search.value
-    const url="http://localhost:3000/weather?address="+address
+    const url="/weather?address="+address
     messageOne.textContent="loading"
     messageTwo.textContent=""
     messageThree.textContent=""
